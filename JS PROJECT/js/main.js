@@ -27,7 +27,7 @@ buttonCart.addEventListener("click", () => {
 });
 
 buttonsModal[0].addEventListener("click", () => {
-  if (!totalSum) {
+  if (!cart.getData('total_price')) {
     alert('Ваша корзина пуста! Для перехода к оплате добавьте в корзину как минимум 1 позицию.');
   } else {
     modal.classList.remove('_open');
