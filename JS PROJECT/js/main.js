@@ -2,15 +2,15 @@ const header = document.querySelector('.header'); // Хэдер
 const modal = document.querySelector('.modal'); // Модальное окно (поп-ап корзина)
 const buttonCart = document.querySelector('.cart'); // Кнопка, открывающая корзину (в хэдере)
 const buttonsModal = document.querySelectorAll('.modal__button');
+const cartCount = document.querySelector('.cart__count'); //<span> - счётчик позиций в корзине (тот, что на кнопке в хэдере)
+const modalSum = document.querySelector('.modal__sum'); // <span> - счётчик итоговой суммы в корзине.
+const modalList = document.querySelector('.modal__list'); // <ul> в корзине, в который помещаются позиции
+const paySum = document.querySelector('.pay__sum');
+const payPage = document.querySelector('.pay-page');
+const payButtons = document.querySelectorAll('.pay__button');
+const sections = document.querySelectorAll('section');
 let cartCounter = 0;
-let cartCount = document.querySelector('.cart__count'); //<span> - счётчик позиций в корзине (тот, что на кнопке в хэдере)
-let modalSum = document.querySelector('.modal__sum'); // <span> - счётчик итоговой суммы в корзине.
-let modalList = document.querySelector('.modal__list'); // <ul> в корзине, в который помещаются позиции
-let paySum = document.querySelector('.pay__sum');
-let payPage = document.querySelector('.pay-page');
 let totalSum = 0;
-let payButtons = document.querySelectorAll('.pay__button');
-let sections = document.querySelectorAll('section');
 
 // Динамическая тень хэдера
 window.addEventListener("scroll", () => {
