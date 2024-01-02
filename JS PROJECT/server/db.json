@@ -1,0 +1,88 @@
+{
+  "foods": [
+    {
+      "id": "001",
+      "name": "Чизбургер",
+      "img": "img/hero/cb.png",
+      "price": 59,
+      "type": "burger"
+    },
+    {
+      "id": "002",
+      "name": "Двойной чизбургер",
+      "img": "img/hero/dcb.png",
+      "price": 119,
+      "type": "burger"
+    },
+    {
+      "id": "003",
+      "name": "Биг бро",
+      "img": "img/hero/bb.png",
+      "price": 189,
+      "type": "burger"
+    },
+    {
+      "id": "004",
+      "name": "Леонардо Ди Каприо",
+      "img": "img/hero/dbb.png",
+      "price": 259,
+      "type": "burger"
+    },
+    {
+      "id": "005",
+      "name": "Шоколадное мороженое",
+      "img": "img/hero/cic.png",
+      "price": 99,
+      "type": "dessert"
+    },
+    {
+      "id": "006",
+      "name": "Карамельное мороженое",
+      "img": "img/hero/caric.png",
+      "price": 99,
+      "type": "dessert"
+    },
+    {
+      "id": "007",
+      "name": "Клубничное мороженое",
+      "img": "img/hero/sic.png",
+      "price": 99,
+      "type": "dessert"
+    },
+    {
+      "id": "008",
+      "name": "Беспонтовый пирожок",
+      "img": "img/hero/bp.png",
+      "price": 69,
+      "type": "dessert"
+    },
+    {
+      "id": "009",
+      "name": "Латте ореховый",
+      "img": "img/hero/nl.png",
+      "price": 169,
+      "type": "drink"
+    },
+    {
+      "id": "010",
+      "name": "Капучино ореховый",
+      "img": "img/hero/nc.png",
+      "price": 169,
+      "type": "drink"
+    },
+    {
+      "id": "011",
+      "name": "Сок яблочный",
+      "img": "img/hero/aj.png",
+      "price": 99,
+      "type": "drink"
+    },
+    {
+      "id": "012",
+      "name": "Липтон зелёный",
+      "img": "img/hero/gl.png",
+      "price": 69,
+      "type": "drink"
+    }
+  ]
+}

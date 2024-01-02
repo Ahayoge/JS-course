@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Петербургер</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container flex">
+      <img class="header__logo" src="img/header/header-logo.svg" alt="Логотип сайта">
+      <nav class="header__nav flex">
+        <a href="#burgers" class="header__navlink">Бургеры</a>
+        <a href="#desserts" class="header__navlink">Десерты</a>
+        <a href="#drinks" class="header__navlink">Напитки</a>
+        <button class="btn-reset header__navlink cart flex">
+          <img src="img/header/cart.svg" alt="Тележка">
+          <span class="cart__title">Корзина</span>
+          <span class="cart__count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container main__container">
+      <select class="food-filter" name="city" id="city-select">
+        <option value="category">Категория</option>
+        <option value="burgers">Бургеры</option>
+        <option value="desserts">Десерты</option>
+        <option value="drinks">Напитки</option>
+      </select>
+      <section class="section" id="burgers">
+        <h2 class="section__title">Бургеры</h2>
+        <ul class="section__list burger__list flex">
+        </ul>
+      </section>
+
+      <section class="section" id="desserts">
+        <h2 class="section__title">Десерты</h2>
+        <ul class="section__list dessert__list flex">
+        </ul>
+      </section>
+
+      <section class="section" id="drinks">
+        <h2 class="section__title">Напитки</h2>
+        <ul class="section__list drink__list flex">
+        </ul>
+      </section>
+
+      <div class="modal">
+        <div class="modal__window">
+          <div class="modal__top flex">
+            <h2 class="section__title">Корзина</h2>
+            <h3 class="section__title">Итого:
+              <span class="modal__sum">0</span>
+            </h3>
+          </div>
+          <ul class="modal__list flex">
+          </ul>
+          <div class="modal__buttons flex">
+            <button class="btn-reset modal__button">К оплате</button>
+            <button class="btn-reset modal__button">Очистить корзину</button>
+            <button class="btn-reset modal__button">Закрыть</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-page">
+        <div class="container pay__container">
+          <div class="pay__top flex">
+            <h2 class="section__title">Детали заказа</h2>
+            <h3 class="section__title">Итого:
+              <span class="pay__sum">0</span>
+            </h3>
+          </div>
+          <h4 class="pay__attention">Внимание! В связи с большим количеством заявок на доставку, максимальное время
+            доставки увеличено и составляет 3ч.</h4>
+          <form class="pay__form flex" action="#" method="POST">
+            <div class="pay__address flex">
+              <input class="pay__input input1" name="user__city" type="text" placeholder="Город" required>
+              <input class="pay__input input2" name="user__street" type="text" placeholder="Улица" required>
+              <input class="pay__input input3" name="user__house" type="text" placeholder="Дом" required>
+              <input class="pay__input input4" name="user__flat" type="text" placeholder="Подъезд" required>
+              <input class="pay__input input4" name="user__flat" type="text" placeholder="Этаж" required>
+              <input class="pay__input input4" name="user__flat" type="text" placeholder="Квартира" required>
+            </div>
+            <h3 class="section__title">Выберите способ оплаты:</h3>
+            <div class="pay__methods flex">
+              <div class="pay__method flex">
+                <input class="pay__input" type="radio" id="card" name="pay__method" checked>
+                <label for="card"><img class="pay__img" src="img/pay/free-icon-3d-credit-card-10473692.png"
+                    alt=""></label>
+              </div>
+              <div class="pay__method flex">
+                <input class="pay__input" type="radio" id="sberpay" name="pay__method">
+                <label for="sberpay"><img class="pay__img" src="img/pay/SberPay_New.png" alt=""></label>
+              </div>
+              <div class="pay__method flex">
+                <input class="pay__input" type="radio" id="bitcoin" name="pay__method">
+                <label for="bitcoin"><img class="pay__img" src="img/pay/bitcoin_icon-icons.com_60538.png"
+                    alt=""></label>
+              </div>
+            </div>
+            <div class="pay__buttons flex">
+              <button class="btn-reset pay__button" type="submit">Оплатить заказ</button>
+              <button class="btn-reset pay__button" type="button">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
